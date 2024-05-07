@@ -1,57 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2023 INFORMS Annual Meeting</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .header-gradient {
-            background: linear-gradient(to right, #4b6cb7, #182848);
-        }
-        .info-tiles:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2023 INFORMS Annual Meeting</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.1.7/dist/tailwind.min.css" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+    }
+    .header-color {
+        background-color: #2A4365;
+    }
+    .nav-color {
+        background-color: #ffffff;
+    }
+    .footer-color {
+        background-color: #1a202c;
+        color: #ffffff;
+    }
+    .btn {
+        background-color: #ff8c00;
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .card {
+        transition: transform .2s;
+    }
+    .card:hover {
+        transform: scale(1.05);
+    }
+</style>
 </head>
-<body class="antialiased text-gray-900">
-    <div class="header-gradient text-white py-4">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <div class="flex space-x-4">
-                <a href="#" class="hover:text-gray-200">Submit</a>
-                <a href="#" class="hover:text-gray-200">Attend</a>
-                <a href="#" class="hover:text-gray-200">Program</a>
-                <a href="#" class="hover:text-gray-200">Career Fair</a>
-                <a href="#" class="hover:text-gray-200">Exhibitors & Sponsors</a>
-            </div>
-            <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">Register</a>
-        </div>
+<body>
+<div class="header-color text-white p-4 text-center text-3xl">
+    2023 INFORMS Annual Meeting<br>
+    <span class="text-xl">October 15-18, 2023 | Phoenix, Arizona</span>
+</div>
+
+<div class="nav-color p-4 flex justify-between items-center">
+    <div>
+        <a href="#" class="btn">Submit</a>
+        <a href="#" class="btn">Attend</a>
+        <a href="#" class="btn">Program</a>
+        <a href="#" class="btn">Career Fair</a>
+        <a href="#" class="btn">Exhibitors & Sponsors</a>
     </div>
-    <div class="container mx-auto px-4 py-10">
-        <h1 class="text-4xl font-bold">2023 INFORMS Annual Meeting</h1>
-        <p class="text-xl">October 15-18, 2023 | Phoenix, AZ</p>
+    <div>
+        <button class="btn">Register</button>
+        <input type="search" placeholder="Search..." class="p-2">
     </div>
-    <div class="container mx-auto px-4 grid grid-cols-4 gap-4 mb-10">
-        <div class="info-tiles bg-orange-300 p-6 rounded-lg shadow-md cursor-pointer">
-            <h2 class="font-bold">Register</h2>
-            <p>Sign up to attend the meeting.</p>
-        </div>
-        <div class="info-tiles bg-orange-300 p-6 rounded-lg shadow-md cursor-pointer">
-            <h2 class="font-bold">Searchable Schedule Login</h2>
-            <p>Access the detailed schedule.</p>
-        </div>
-        <div class="info-tiles bg-orange-300 p-6 rounded-lg shadow-md cursor-pointer">
-            <h2 class="font-bold">Schedule at a Glance</h2>
-            <p>See the overall timeline.</p>
-        </div>
-        <div class="info-tiles bg-orange-300 p-6 rounded-lg shadow-md cursor-pointer">
-            <h2 class="font-bold">Download the INFORMS App</h2>
-            <p>Get the app for updates and info.</p>
-        </div>
+</div>
+
+<div class="p-4">
+    <h1>Welcome to the 2023 INFORMS Annual Meeting!</h1>
+    <p>
+        In addition to thousands of presentations - united by a common theme of
+        “Harnessing the data revolution ... all with the power of OR/MS!” - and
+        numerous networking opportunities at the meeting, attendees are
+        encouraged to take advantage of Phoenix’s many interesting sights and
+        experiences. The fifth-largest city in the nation, Phoenix is renowned for its
+        elevated art, culture, and cuisine. Nestled in the stark beauty of the
+        Sonoran Desert, Phoenix is an exciting oasis and the perfect location to
+        welcome our attendees from across the globe.
+    </p>
+</div>
+
+<div class="grid grid-cols-4 gap-4 p-4">
+    <div class="card p-4 bg-gray-100 text-center">
+        <h2>Register</h2>
+        <button class="btn">Sign Up Now</button>
     </div>
-    <footer class="bg-gray-800 text-white text-center p-4">
-        <p>© 2023 INFORMS Annual Meeting</p>
-    </footer>
+    <div class="card p-4 bg-gray-100 text-center">
+        <h2>Searchable Schedule</h2>
+        <button class="btn">View Schedule</button>
+    </div>
+    <div class="card p-4 bg-gray-100 text-center">
+        <h2>Schedule at a Glance</h2>
+        <button class="btn">Download PDF</button>
+    </div>
+    <div class="card p-4 bg-gray-100 text-center">
+        <h2>Download the INFORMS App</h2>
+        <button class="btn">Get the App</button>
+    </div>
+</div>
+
+<div class="footer-color p-4 text-center">
+    © 2023 INFORMS Annual Meeting. All rights reserved.
+</div>
+
+<script>
+    // Add interactive JavaScript here if needed
+</script>
 </body>
 </html>
