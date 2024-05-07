@@ -1,99 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2023 INFORMS Annual Meeting</title>
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.1.7/dist/tailwind.min.css" rel="stylesheet">
-<style>
-    body {
-        font-family: 'Arial', sans-serif;
-    }
-    .header-color {
-        background-color: #2A4365;
-    }
-    .nav-color {
-        background-color: #ffffff;
-    }
-    .footer-color {
-        background-color: #1a202c;
-        color: #ffffff;
-    }
-    .btn {
-        background-color: #ff8c00;
-        color: white;
-        padding: 8px 16px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-    .card {
-        transition: transform .2s;
-    }
-    .card:hover {
-        transform: scale(1.05);
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFORMS Annual Meeting 2023</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 5rem;
+            font-family: 'Arial', sans-serif;
+        }
+        .header {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #e1e4e8;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #e1e4e8;
+        }
+        .container-max {
+            max-width: 1200px;
+        }
+    </style>
 </head>
 <body>
-<div class="header-color text-white p-4 text-center text-3xl">
-    2023 INFORMS Annual Meeting<br>
-    <span class="text-xl">October 15-18, 2023 | Phoenix, Arizona</span>
-</div>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <div class="container-fluid container-max">
+            <a class="navbar-brand" href="#">INFORMS 2023</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
-<div class="nav-color p-4 flex justify-between items-center">
-    <div>
-        <a href="#" class="btn">Submit</a>
-        <a href="#" class="btn">Attend</a>
-        <a href="#" class="btn">Program</a>
-        <a href="#" class="btn">Career Fair</a>
-        <a href="#" class="btn">Exhibitors & Sponsors</a>
-    </div>
-    <div>
-        <button class="btn">Register</button>
-        <input type="search" placeholder="Search..." class="p-2">
-    </div>
-</div>
+    <main class="container container-max">
+        <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+            <div class="col-md-6 px-0">
+                <h1 class="display-4 fst-italic">Welcome to the 2023 INFORMS Annual Meeting</h1>
+                <p class="lead my-3">Join us in Phoenix, Arizona for an engaging series of presentations and discussions on the latest in operations research and management sciences.</p>
+                <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+            </div>
+        </div>
 
-<div class="p-4">
-    <h1>Welcome to the 2023 INFORMS Annual Meeting!</h1>
-    <p>
-        In addition to thousands of presentations - united by a common theme of
-        “Harnessing the data revolution ... all with the power of OR/MS!” - and
-        numerous networking opportunities at the meeting, attendees are
-        encouraged to take advantage of Phoenix’s many interesting sights and
-        experiences. The fifth-largest city in the nation, Phoenix is renowned for its
-        elevated art, culture, and cuisine. Nestled in the stark beauty of the
-        Sonoran Desert, Phoenix is an exciting oasis and the perfect location to
-        welcome our attendees from across the globe.
-    </p>
-</div>
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">Main Event</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Opening Ceremony</a>
+                        </h3>
+                        <div class="mb-1 text-muted">Oct 15</div>
+                        <p class="card-text mb-auto">Kick off the annual meeting with a welcome speech from our keynote speaker.</p>
+                        <a href="#">Continue reading</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-success">Workshops</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Data Science Workshop</a>
+                        </h3>
+                        <div class="mb-1 text-muted">Oct 16</div>
+                        <p class="card-text mb-auto">Explore the latest trends in data science and its applications in operations research.</p>
+                        <a href="#">Continue reading</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-<div class="grid grid-cols-4 gap-4 p-4">
-    <div class="card p-4 bg-gray-100 text-center">
-        <h2>Register</h2>
-        <button class="btn">Sign Up Now</button>
-    </div>
-    <div class="card p-4 bg-gray-100 text-center">
-        <h2>Searchable Schedule</h2>
-        <button class="btn">View Schedule</button>
-    </div>
-    <div class="card p-4 bg-gray-100 text-center">
-        <h2>Schedule at a Glance</h2>
-        <button class="btn">Download PDF</button>
-    </div>
-    <div class="card p-4 bg-gray-100 text-center">
-        <h2>Download the INFORMS App</h2>
-        <button class="btn">Get the App</button>
-    </div>
-</div>
+    <footer class="footer">
+        <p>© 2023 INFORMS Annual Meeting</p>
+    </footer>
 
-<div class="footer-color p-4 text-center">
-    © 2023 INFORMS Annual Meeting. All rights reserved.
-</div>
-
-<script>
-    // Add interactive JavaScript here if needed
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
